@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <title> Hobbies </title>
+</head>
+<body>
+    <center>
+<h1> Wanna know my hobbies? </h1>
+<br>
+<br>
+<input type="text" id="input" placeholder="Enter hobby"> &nbsp;
+<button add.EventListener onclick="enter()"> Enter </button> &nbsp;
+<p id="display"> </p>
+    </center>
+
+    <script>
+        var hobbiesArray= [];
+        
+        function enter(){
+            var hobby= document.getElementById("input").value;
+            hobbiesArray.push("<br>"+hobby);
+         document.getElementById("display").innerHTML=hobbiesArray;
+       input.value= " ";
+        }
+
+        
+    </script>
+</body>
+</html>
